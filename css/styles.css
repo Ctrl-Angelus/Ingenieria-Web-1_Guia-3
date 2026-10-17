@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+:root {
+    /* Paleta */
+    --peach: #FFCF9C;
+    --coral: #FF8F6B;
+    --red: #E8523E;
+    --purple: #7C3F80;
+    --deep: #2A2150;
+
+    --light: #ffffff;
+    --dark: var(--deep);
+
+    --background: var(--light);
+    --text: var(--deep);
+    --heading: var(--purple);
+    --link: var(--purple);
+    --surface: #FFF1E0;
+    --surface-strong: #FFE2C2;
+    --thead-bg: var(--deep);
+    --thead-text: var(--light);
+    --header-bg: var(--peach);
+    --header-text: var(--deep);
+    --footer-bg: var(--coral);
+    --footer-text: var(--deep);
+    --focus: var(--deep);
+    --code-bg: #1C1640;
+    --code-text: #FFF1E0;
+}
+
+body.dark {
+    color-scheme: dark;
+    --background: var(--deep);
+    --text: #FFF4E8;
+    --heading: var(--peach);
+    --link: var(--peach);
+    --surface: #352B63;
+    --surface-strong: #43377A;
+    --thead-bg: var(--peach);
+    --thead-text: var(--deep);
+    --header-bg: var(--purple);
+    --header-text: var(--light);
+    --footer-bg: #1C1640;
+    --footer-text: var(--peach);
+    --focus: var(--peach);
+    --code-bg: #15102F;
+    --code-text: #FFF1E0;
+}
