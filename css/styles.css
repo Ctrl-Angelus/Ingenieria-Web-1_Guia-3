@@ -32,7 +32,6 @@ button {
 }
 
 :root {
-    /* Paleta */
     --peach: #FFCF9C;
     --coral: #FF8F6B;
     --red: #E8523E;
@@ -76,4 +75,123 @@ body.dark {
     --focus: var(--peach);
     --code-bg: #15102F;
     --code-text: #FFF1E0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: inter, system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--heading);
+    display: block;
+    line-height: 1.25;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+header {
+    width: 100%;
+    min-height: 70px;
+    padding: 10px 1rem;
+    background-color: var(--header-bg);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+}
+
+header a {
+    color: var(--header-text);
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.25rem 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.25rem 0;
+}
+
+#dark-mode-toggle {
+    background: transparent;
+    color: var(--header-text);
+    border: 2px solid var(--header-text);
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+#dark-mode-toggle img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+body.dark #dark-mode-toggle img {
+    filter: invert(1);
+}
+
+footer {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--footer-bg);
+}
+
+footer p,
+footer address {
+    color: var(--footer-text);
+}
+
+footer a {
+    color: var(--footer-text);
+}
+
+footer address {
+    font-style: normal;
+    margin-top: 0.25rem;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main>section,
+.container {
+    width: 80%;
+    padding: 10px;
 }

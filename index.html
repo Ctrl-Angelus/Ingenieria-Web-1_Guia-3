@@ -11,7 +11,24 @@
 
 <body>
     <header>
-        <nav></nav>
+        <div class="brand">
+            <a href="#start" class="logo">
+                <img src="./img/logo.svg" alt="" width="50" height="50">
+                <span>Linux Básico</span>
+            </a>
+            <p>Guía de conceptos para empezar</p>
+        </div>
+
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="#start">Inicio</a></li>
+                <li><a href="#fundamentals">Fundamentos</a></li>
+                <li><a href="#distributions">Distribuciones</a></li>
+                <li><a href="#terminal">Terminal</a></li>
+            </ul>
+        </nav>
+
+
         <button id="dark-mode-toggle" aria-label="Cambiar entre modo claro y oscuro">
             <img src="./img/moon.svg" id="dark-toggle">
             <img src="./img/sun.svg" id="light-toggle">
@@ -19,14 +36,26 @@
     </header>
     <main>
         <section>
-            <h1>Conceptos Básicos sobre Linux</h1>
+            <h1 id="start">Conceptos Básicos sobre Linux</h1>
         </section>
-        <section>
+        <section class="container">
             <article></article>
             <aside></aside>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Proyecto de Ingeniería Web I. © 2026 Miguel Angel Ortiz Loaiza.</p>
+        <address>
+            Contacto:
+            <a href="https://github.com/Ctrl-Angelus" target="_blank" rel="noopener noreferrer">
+                perfil de GitHub
+            </a>
+        </address>
+        <p class="disclaimer">
+            Linux es una marca registrada de Linus Torvalds. Ubuntu es una marca registrada de Canonical Ltd.
+            Este sitio no está afiliado ni respaldado por dichas partes.
+        </p>
+    </footer>
     <script src="./js/index.js" defer></script>
 </body>
 
