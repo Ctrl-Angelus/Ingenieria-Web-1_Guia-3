@@ -106,7 +106,6 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     font-size: clamp(1.6rem, 4vw, 2.4rem);
-    border-bottom: 4px solid var(--heading);
 }
 
 header {
@@ -141,6 +140,7 @@ header a {
     gap: 0.5rem;
     font-size: 1.15rem;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .logo img {
@@ -167,7 +167,7 @@ button:focus-visible,
 }
 
 nav {
-    flex: 1;
+    flex: 1 1 auto;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -186,6 +186,7 @@ nav a {
 }
 
 #dark-mode-toggle {
+    flex: 0 0 auto;
     background: transparent;
     color: var(--header-text);
     border: 2px solid var(--header-text);
@@ -241,6 +242,17 @@ main {
     gap: 1em;
 }
 
+main>section {
+    width: 80%;
+    /* el contenedor necesita un ancho definido */
+}
+
+#banner {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .contenido {
     width: 80%;
     padding: 10px;
@@ -258,12 +270,29 @@ aside {
 
     main {
         flex-direction: column;
+        justify-content: center;
+    }
+
+    main>section {
+        width: 100%;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
     }
 }
 
 @media (max-width: 700px) {
     .marca p {
         display: none;
+    }
+
+    nav ul {
+        justify-content: flex-start;
     }
 }
 
@@ -428,4 +457,24 @@ tbody td {
 
 tbody tr:nth-child(even) td {
     background: var(--surface);
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figure.figura-estrecha {
+    max-width: 640px;
+}
+
+figcaption {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    color: var(--text);
 }

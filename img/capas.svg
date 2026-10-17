@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img">
+    <title>Capas de un sistema Linux</title>
+    <rect width="800" height="440" fill="#FFF1E0"/>
+    <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+        <rect x="40" y="21" width="720" height="70" fill="#FFE2C2"/>
+        <text x="400" y="53" font-size="26" font-weight="700" fill="#2A2150">Aplicaciones</text>
+        <text x="400" y="78" font-size="18" fill="#2A2150">Navegador, editor de texto, juegos</text>
+
+        <rect x="40" y="103" width="720" height="70" fill="#FFCF9C"/>
+        <text x="400" y="135" font-size="26" font-weight="700" fill="#2A2150">Shell y terminal</text>
+        <text x="400" y="160" font-size="18" fill="#2A2150">bash interpreta los comandos que escribes</text>
+
+        <rect x="40" y="185" width="720" height="70" fill="#FF8F6B"/>
+        <text x="400" y="217" font-size="26" font-weight="700" fill="#2A2150">Bibliotecas y herramientas GNU</text>
+        <text x="400" y="242" font-size="18" fill="#2A2150">glibc, coreutils, compilador gcc</text>
+
+        <rect x="40" y="267" width="720" height="70" fill="#7C3F80"/>
+        <text x="400" y="299" font-size="26" font-weight="700" fill="#ffffff">Kernel Linux</text>
+        <text x="400" y="324" font-size="18" fill="#ffffff">Procesos, memoria, archivos y controladores</text>
+
+        <rect x="40" y="349" width="720" height="70" fill="#2A2150"/>
+        <text x="400" y="381" font-size="26" font-weight="700" fill="#ffffff">Hardware</text>
+        <text x="400" y="406" font-size="18" fill="#ffffff">CPU, memoria, disco y red</text>
+    </g>
+</svg>

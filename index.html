@@ -39,6 +39,11 @@
         <div class="contenido">
             <section id="inicio" aria-labelledby="titulo-inicio">
                 <h1 id="titulo-inicio">Linux: conceptos básicos</h1>
+                <figure>
+                    <img src="./img/banner.png" alt="Banner decorativo del artículo con información general" id="banner"
+                        width="1280" height="720" loading="eager">
+                    <figcaption>Banner del artículo</figcaption>
+                </figure>
             </section>
 
             <section id="fundamentos" aria-labelledby="titulo-fundamentos">
@@ -69,6 +74,13 @@
                     <p>
                         Un sistema Linux se puede imaginar como una pila de capas. Las aplicaciones y la shell (el intérprete de comandos) se apoyan en bibliotecas y herramientas GNU; estas piden servicios al kernel, y el kernel es el único que controla directamente el hardware.
                     </p>
+                    <figure class="figura-estrecha">
+                        <img src="./img/capas.svg"
+                            alt="Diagrama de capas de un sistema Linux. De arriba abajo: aplicaciones, shell y terminal, bibliotecas y herramientas GNU, kernel Linux y hardware."
+                            width="800" height="440" loading="lazy">
+                        <figcaption>Figura 1. Capas de un sistema Linux, desde las aplicaciones hasta el hardware.</figcaption>
+                    </figure>
+
                 </article>
             </section>
 
@@ -133,7 +145,8 @@
                         actualizados. En las distribuciones de la familia Debian se usa <code>apt</code>:
                     </p>
                     <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: comandos de apt">
-                        <code>sudo apt update # actualiza la lista de paquetes disponibles
+                        <code>
+sudo apt update # actualiza la lista de paquetes disponibles
 sudo apt install git # instala un paquete
 sudo apt remove git # desinstala un paquete
 sudo apt upgrade # actualiza los paquetes instalados</code></pre>
@@ -262,7 +275,8 @@ sudo apt upgrade # actualiza los paquetes instalados</code></pre>
                     </div>
                     <p>Una sesión de ejemplo:</p>
                     <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: sesión de terminal">
-                        <code>usuario@linux:~$ pwd
+                        <code>
+usuario@linux:~$ pwd
 /home/usuario
 usuario@linux:~$ mkdir proyectos
 usuario@linux:~$ cd proyectos
@@ -283,15 +297,16 @@ usuario@linux:~$</code></pre>
                         comando <code>ls -l</code> los muestra al principio de cada línea:
                     </p>
                     <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: salida de ls -l">
-                        <code>-rwxr-xr-- 1 usuario grupo 1024 oct 17 10:30 script.sh</code></pre>
+<code>-rwxr-xr-- 1 usuario grupo 1024 oct 17 10:30 script.sh</code></pre>
                     <p>
                         El primer carácter indica el tipo (<code>-</code> es un archivo). Luego vienen tres
                         bloques: <code>rwx</code> para el propietario, <code>r-x</code> para el grupo y
                         <code>r--</code> para los demás. Con <code>chmod</code> se modifican:
                     </p>
                     <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: comandos chmod">
-                        <code>chmod u+x script.sh # añade ejecución al propietario
-                            chmod 754 script.sh # equivale a rwxr-xr--</code></pre>
+                        <code>
+chmod u+x script.sh # añade ejecución al propietario
+chmod 754 script.sh # equivale a rwxr-xr--</code></pre>
                     <p>
                         En la forma numérica, cada permiso vale un número: lectura 4, escritura 2 y ejecución 1.
                         Se suman por bloque, así que <code>7</code> es <code>rwx</code>, <code>5</code> es
