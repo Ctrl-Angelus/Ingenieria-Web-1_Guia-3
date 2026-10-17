@@ -106,6 +106,7 @@ h1 {
     text-align: center;
     margin-bottom: 10px;
     font-size: clamp(1.6rem, 4vw, 2.4rem);
+    border-bottom: 4px solid var(--heading);
 }
 
 header {
@@ -145,6 +146,24 @@ header a {
 .logo img {
     width: 50px;
     height: 50px;
+}
+
+a {
+    font-weight: bold;
+    color: var(--link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    text-decoration-thickness: 3px;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex="0"]:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
 }
 
 nav {
@@ -246,4 +265,167 @@ aside {
     .marca p {
         display: none;
     }
+}
+
+.contenido h2 {
+    margin: 2.5rem 0 1rem;
+    font-size: 1.6rem;
+}
+
+.contenido>section:first-child>h2 {
+    margin-top: 0;
+}
+
+.contenido h3 {
+    margin: 1.5rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contenido article>h3:first-child {
+    margin-top: 0;
+}
+
+.contenido article {
+    margin-bottom: 1.5rem;
+}
+
+.contenido p {
+    margin-bottom: 1rem;
+}
+
+aside {
+    align-self: start;
+    padding: 1rem;
+    background: var(--surface);
+}
+
+aside h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+}
+
+aside h3 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+aside ul {
+    display: grid;
+    gap: 0.25rem;
+}
+
+li {
+    list-style: none;
+}
+
+aside a {
+    display: block;
+    padding: 0.35rem 0.5rem;
+    overflow-wrap: anywhere;
+}
+
+aside a:hover {
+    background: var(--surface-strong);
+}
+
+dl {
+    margin: 1rem 0 2rem;
+    color: var(--text);
+}
+
+dt {
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--heading);
+}
+
+dt:first-child {
+    margin-top: 0;
+}
+
+dd {
+    margin: 0.25rem 0 0;
+    padding: 0.5rem 1rem;
+    background: var(--surface);
+    color: var(--text);
+}
+
+code,
+kbd {
+    font-family: "Fira Code", "Cascadia Code", Consolas, monospace;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+:not(pre)>code,
+kbd {
+    font-size: 0.9em;
+    padding: 0.1em 0.4em;
+    background: var(--surface-strong);
+    color: var(--text);
+}
+
+.code-block {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--code-bg);
+    color: var(--code-text);
+    font-family: "Fira Code", "Cascadia Code", Consolas, monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    white-space: pre;
+    tab-size: 4;
+    overflow-x: auto;
+}
+
+.code-block code {
+    background: none;
+    color: inherit;
+}
+
+.table-container {
+    width: 100%;
+    margin: 1rem 0 2rem;
+    overflow-x: auto;
+    color: var(--text);
+}
+
+table {
+    width: 100%;
+    min-width: 480px;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    color: var(--heading);
+}
+
+th,
+td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+thead th {
+    background: var(--thead-bg);
+    color: var(--thead-text);
+}
+
+tbody th {
+    background: var(--surface-strong);
+    color: var(--text);
+    font-weight: 600;
+}
+
+tbody td {
+    background: var(--background);
+    color: var(--text);
+}
+
+tbody tr:nth-child(even) td {
+    background: var(--surface);
 }
