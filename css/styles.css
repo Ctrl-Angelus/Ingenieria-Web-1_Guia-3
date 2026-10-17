@@ -170,6 +170,7 @@ nav a {
     background: transparent;
     color: var(--header-text);
     border: 2px solid var(--header-text);
+    border-radius: 10px;
     padding: 6px;
     display: flex;
     align-items: center;
@@ -213,15 +214,36 @@ footer address {
 }
 
 main {
-    width: 100%;
+    width: 80%;
     flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1em;
 }
 
-main>section,
-.container {
+.contenido {
     width: 80%;
     padding: 10px;
+    grid-area: content;
+}
+
+aside {
+    grid-area: aside;
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .marca p {
+        display: none;
+    }
 }

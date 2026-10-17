@@ -34,336 +34,335 @@
             <img src="./img/sun.svg" id="light-toggle">
         </button>
     </header>
-    <main id="contenido">
-        <section id="inicio" aria-labelledby="titulo-inicio">
-            <h1 id="titulo-inicio">Linux: conceptos básicos</h1>
-        </section>
+    <main>
 
-        <div class="container">
-            <div class="contenido">
-                <section id="fundamentos" aria-labelledby="titulo-fundamentos">
-                    <h2 id="titulo-fundamentos">Fundamentos</h2>
+        <div class="contenido">
+            <section id="inicio" aria-labelledby="titulo-inicio">
+                <h1 id="titulo-inicio">Linux: conceptos básicos</h1>
+            </section>
 
-                    <article>
-                        <h3>¿Qué es Linux?</h3>
-                        <p>
-                            Linux es, en sentido estricto, un <i lang="en">kernel</i> (núcleo): el programa que se
-                            comunica con el hardware y reparte la memoria, el procesador y los dispositivos entre los
-                            demás programas. El <time datetime="1991-08-25">25 de agosto de 1991</time>, el estudiante
-                            finlandés Linus Torvalds anunció públicamente que trabajaba en él.
-                        </p>
-                        <p>
-                            Cuando se habla de un sistema Linux se alude al kernel junto con las herramientas del
-                            proyecto GNU, iniciado por Richard Stallman el
-                            <time datetime="1983-09-27">27 de septiembre de 1983</time>, y otros programas. Por eso
-                            algunas personas lo llaman GNU/Linux.
-                        </p>
-                        <p>
-                            Es software libre y de código abierto: el kernel se distribuye bajo la licencia GPL
-                            versión 2, que permite usarlo, estudiarlo, modificarlo y compartirlo.
-                        </p>
-                    </article>
+            <section id="fundamentos" aria-labelledby="titulo-fundamentos">
+                <h2 id="titulo-fundamentos">Fundamentos</h2>
 
-                    <article>
-                        <h3>Capas de un sistema Linux</h3>
-                        <p>
-                            Un sistema Linux se puede imaginar como una pila de capas. Las aplicaciones y la shell (el
-                            intérprete de comandos) se apoyan en bibliotecas y herramientas GNU; estas piden servicios
-                            al kernel, y el kernel es el único que controla directamente el hardware.
-                        </p>
-                        <figure class="figura-estrecha">
-                            <img src="./img/capas.svg" alt="Diagrama de capas de un sistema Linux. De arriba abajo: aplicaciones, shell y terminal, bibliotecas y herramientas GNU, kernel Linux y hardware." width="800" height="440" loading="lazy">
-                            <figcaption>Figura 1. Capas de un sistema Linux, desde las aplicaciones hasta el hardware.</figcaption>
-                        </figure>
-                    </article>
-                </section>
+                <article>
+                    <h3>¿Qué es Linux?</h3>
+                    <p>
+                        Linux es, en sentido estricto, un <i lang="en">kernel</i> (núcleo): el programa que se
+                        comunica con el hardware y reparte la memoria, el procesador y los dispositivos entre los
+                        demás programas. El <time datetime="1991-08-25">25 de agosto de 1991</time>, el estudiante
+                        finlandés Linus Torvalds anunció públicamente que trabajaba en él.
+                    </p>
+                    <p>
+                        Cuando se habla de un sistema Linux se alude al kernel junto con las herramientas del
+                        proyecto GNU, iniciado por Richard Stallman el
+                        <time datetime="1983-09-27">27 de septiembre de 1983</time>, y otros programas. Por eso
+                        algunas personas lo llaman GNU/Linux.
+                    </p>
+                    <p>
+                        Es software libre y de código abierto: el kernel se distribuye bajo la licencia GPL
+                        versión 2, que permite usarlo, estudiarlo, modificarlo y compartirlo.
+                    </p>
+                </article>
 
-                <section id="distribuciones" aria-labelledby="titulo-distribuciones">
-                    <h2 id="titulo-distribuciones">Distribuciones y paquetes</h2>
+                <article>
+                    <h3>Capas de un sistema Linux</h3>
+                    <p>
+                        Un sistema Linux se puede imaginar como una pila de capas. Las aplicaciones y la shell (el
+                        intérprete de comandos) se apoyan en bibliotecas y herramientas GNU; estas piden servicios
+                        al kernel, y el kernel es el único que controla directamente el hardware.
+                    </p>
+                </article>
+            </section>
 
-                    <article>
-                        <h3>¿Qué es una distribución?</h3>
-                        <p>
-                            Una distribución reúne el kernel Linux, herramientas GNU, un gestor de paquetes y,
-                            normalmente, un entorno de escritorio, todo listo para instalar. Cada una tiene sus propios
-                            objetivos: estabilidad, novedades, facilidad de uso o personalización.
-                        </p>
-                        <div class="table-container" role="region" aria-labelledby="cap-distros" tabindex="0">
-                            <table>
-                                <caption id="cap-distros">
-                                    Distribuciones populares y su gestor de paquetes
-                                </caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Distribución</th>
-                                        <th scope="col">Familia</th>
-                                        <th scope="col">Gestor de paquetes</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Debian</th>
-                                        <td>Independiente; base de muchas otras</td>
-                                        <td><code>apt</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Ubuntu</th>
-                                        <td>Basada en Debian</td>
-                                        <td><code>apt</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Linux Mint</th>
-                                        <td>Basada en Ubuntu</td>
-                                        <td><code>apt</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Fedora</th>
-                                        <td>Familia Red Hat</td>
-                                        <td><code>dnf</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Arch Linux</th>
-                                        <td>Independiente</td>
-                                        <td><code>pacman</code></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </article>
+            <section id="distribuciones" aria-labelledby="titulo-distribuciones">
+                <h2 id="titulo-distribuciones">Distribuciones y paquetes</h2>
 
-                    <article>
-                        <h3>Gestión de paquetes</h3>
-                        <p>
-                            Un paquete es un programa empaquetado con la información que necesita para instalarse. El
-                            gestor de paquetes los descarga de repositorios, resuelve sus dependencias y los mantiene
-                            actualizados. En las distribuciones de la familia Debian se usa <code>apt</code>:
-                        </p>
-                        <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: comandos de apt"><code>sudo apt update         # actualiza la lista de paquetes disponibles
-sudo apt install git    # instala un paquete
-sudo apt remove git     # desinstala un paquete
-sudo apt upgrade        # actualiza los paquetes instalados</code></pre>
-                        <p>
-                            <code>sudo</code> ejecuta el comando con privilegios de administrador, necesarios para
-                            instalar o quitar programas del sistema.
-                        </p>
-                    </article>
-                </section>
+                <article>
+                    <h3>¿Qué es una distribución?</h3>
+                    <p>
+                        Una distribución reúne el kernel Linux, herramientas GNU, un gestor de paquetes y,
+                        normalmente, un entorno de escritorio, todo listo para instalar. Cada una tiene sus propios
+                        objetivos: estabilidad, novedades, facilidad de uso o personalización.
+                    </p>
+                    <div class="table-container" role="region" aria-labelledby="cap-distros" tabindex="0">
+                        <table>
+                            <caption id="cap-distros">
+                                Distribuciones populares y su gestor de paquetes
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Distribución</th>
+                                    <th scope="col">Familia</th>
+                                    <th scope="col">Gestor de paquetes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Debian</th>
+                                    <td>Independiente; base de muchas otras</td>
+                                    <td><code>apt</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ubuntu</th>
+                                    <td>Basada en Debian</td>
+                                    <td><code>apt</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Linux Mint</th>
+                                    <td>Basada en Ubuntu</td>
+                                    <td><code>apt</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fedora</th>
+                                    <td>Familia Red Hat</td>
+                                    <td><code>dnf</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Arch Linux</th>
+                                    <td>Independiente</td>
+                                    <td><code>pacman</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
 
-                <section id="terminal" aria-labelledby="titulo-terminal">
-                    <h2 id="titulo-terminal">La terminal</h2>
+                <article>
+                    <h3>Gestión de paquetes</h3>
+                    <p>
+                        Un paquete es un programa empaquetado con la información que necesita para instalarse. El
+                        gestor de paquetes los descarga de repositorios, resuelve sus dependencias y los mantiene
+                        actualizados. En las distribuciones de la familia Debian se usa <code>apt</code>:
+                    </p>
+                    <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: comandos de apt">
+                        <code>sudo apt update # actualiza la lista de paquetes disponibles
+sudo apt install git # instala un paquete
+sudo apt remove git # desinstala un paquete
+sudo apt upgrade # actualiza los paquetes instalados</code></pre>
+                    <p>
+                        <code>sudo</code> ejecuta el comando con privilegios de administrador, necesarios para
+                        instalar o quitar programas del sistema.
+                    </p>
+                </article>
+            </section>
 
-                    <article>
-                        <h3>Estructura de directorios</h3>
-                        <p>
-                            Linux organiza todo en un único árbol que empieza en la raíz, <code>/</code>. No existen
-                            letras de unidad como <code>C:</code>; los discos adicionales se montan dentro del árbol.
-                        </p>
-                        <dl>
-                            <dt><code>/</code></dt>
-                            <dd>Raíz del sistema: de ella cuelga todo lo demás.</dd>
+            <section id="terminal" aria-labelledby="titulo-terminal">
+                <h2 id="titulo-terminal">La terminal</h2>
 
-                            <dt><code>/home</code></dt>
-                            <dd>Carpetas personales de cada usuario.</dd>
+                <article>
+                    <h3>Estructura de directorios</h3>
+                    <p>
+                        Linux organiza todo en un único árbol que empieza en la raíz, <code>/</code>. No existen
+                        letras de unidad como <code>C:</code>; los discos adicionales se montan dentro del árbol.
+                    </p>
+                    <dl>
+                        <dt><code>/</code></dt>
+                        <dd>Raíz del sistema: de ella cuelga todo lo demás.</dd>
 
-                            <dt><code>/etc</code></dt>
-                            <dd>Archivos de configuración del sistema y de los programas.</dd>
+                        <dt><code>/home</code></dt>
+                        <dd>Carpetas personales de cada usuario.</dd>
 
-                            <dt><code>/bin</code> y <code>/usr</code></dt>
-                            <dd>Programas y bibliotecas del sistema.</dd>
+                        <dt><code>/etc</code></dt>
+                        <dd>Archivos de configuración del sistema y de los programas.</dd>
 
-                            <dt><code>/var</code></dt>
-                            <dd>Datos que cambian con el tiempo, como los registros (<i lang="en">logs</i>).</dd>
+                        <dt><code>/bin</code> y <code>/usr</code></dt>
+                        <dd>Programas y bibliotecas del sistema.</dd>
 
-                            <dt><code>/tmp</code></dt>
-                            <dd>Archivos temporales.</dd>
+                        <dt><code>/var</code></dt>
+                        <dd>Datos que cambian con el tiempo, como los registros (<i lang="en">logs</i>).</dd>
 
-                            <dt><code>/dev</code></dt>
-                            <dd>Archivos que representan dispositivos, como discos y terminales.</dd>
+                        <dt><code>/tmp</code></dt>
+                        <dd>Archivos temporales.</dd>
 
-                            <dt><code>/proc</code></dt>
-                            <dd>Sistema de archivos virtual con información de los procesos y del kernel.</dd>
+                        <dt><code>/dev</code></dt>
+                        <dd>Archivos que representan dispositivos, como discos y terminales.</dd>
 
-                            <dt><code>/root</code></dt>
-                            <dd>Carpeta personal del superusuario (administrador).</dd>
-                        </dl>
-                    </article>
+                        <dt><code>/proc</code></dt>
+                        <dd>Sistema de archivos virtual con información de los procesos y del kernel.</dd>
 
-                    <article>
-                        <h3>Comandos esenciales</h3>
-                        <p>
-                            La terminal ejecuta una shell, que lee los comandos que escribes y los ejecuta. Estos son
-                            los que más se usan al empezar:
-                        </p>
-                        <div class="table-container" role="region" aria-labelledby="cap-comandos" tabindex="0">
-                            <table>
-                                <caption id="cap-comandos">
-                                    Comandos básicos de la terminal
-                                </caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Comando</th>
-                                        <th scope="col">Función</th>
-                                        <th scope="col">Ejemplo</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row"><code>pwd</code></th>
-                                        <td>Muestra el directorio actual.</td>
-                                        <td><code>pwd</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>ls</code></th>
-                                        <td>Lista el contenido de un directorio.</td>
-                                        <td><code>ls -l</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>cd</code></th>
-                                        <td>Cambia de directorio.</td>
-                                        <td><code>cd /etc</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>mkdir</code></th>
-                                        <td>Crea un directorio.</td>
-                                        <td><code>mkdir proyectos</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>cp</code></th>
-                                        <td>Copia archivos o directorios.</td>
-                                        <td><code>cp notas.txt copia.txt</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>mv</code></th>
-                                        <td>Mueve o renombra archivos.</td>
-                                        <td><code>mv notas.txt docs/</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>rm</code></th>
-                                        <td>Elimina archivos; no pasan por una papelera.</td>
-                                        <td><code>rm copia.txt</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>cat</code></th>
-                                        <td>Muestra el contenido de un archivo.</td>
-                                        <td><code>cat notas.txt</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>grep</code></th>
-                                        <td>Busca texto dentro de archivos.</td>
-                                        <td><code>grep "error" registro.log</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>man</code></th>
-                                        <td>Abre el manual de un comando.</td>
-                                        <td><code>man ls</code></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><code>sudo</code></th>
-                                        <td>Ejecuta un comando con privilegios de administrador.</td>
-                                        <td><code>sudo apt update</code></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <p>Una sesión de ejemplo:</p>
-                        <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: sesión de terminal"><code>usuario@linux:~$ pwd
+                        <dt><code>/root</code></dt>
+                        <dd>Carpeta personal del superusuario (administrador).</dd>
+                    </dl>
+                </article>
+
+                <article>
+                    <h3>Comandos esenciales</h3>
+                    <p>
+                        La terminal ejecuta una shell, que lee los comandos que escribes y los ejecuta. Estos son
+                        los que más se usan al empezar:
+                    </p>
+                    <div class="table-container" role="region" aria-labelledby="cap-comandos" tabindex="0">
+                        <table>
+                            <caption id="cap-comandos">
+                                Comandos básicos de la terminal
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Comando</th>
+                                    <th scope="col">Función</th>
+                                    <th scope="col">Ejemplo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><code>pwd</code></th>
+                                    <td>Muestra el directorio actual.</td>
+                                    <td><code>pwd</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>ls</code></th>
+                                    <td>Lista el contenido de un directorio.</td>
+                                    <td><code>ls -l</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>cd</code></th>
+                                    <td>Cambia de directorio.</td>
+                                    <td><code>cd /etc</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>mkdir</code></th>
+                                    <td>Crea un directorio.</td>
+                                    <td><code>mkdir proyectos</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>cp</code></th>
+                                    <td>Copia archivos o directorios.</td>
+                                    <td><code>cp notas.txt copia.txt</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>mv</code></th>
+                                    <td>Mueve o renombra archivos.</td>
+                                    <td><code>mv notas.txt docs/</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>rm</code></th>
+                                    <td>Elimina archivos; no pasan por una papelera.</td>
+                                    <td><code>rm copia.txt</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>cat</code></th>
+                                    <td>Muestra el contenido de un archivo.</td>
+                                    <td><code>cat notas.txt</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>grep</code></th>
+                                    <td>Busca texto dentro de archivos.</td>
+                                    <td><code>grep "error" registro.log</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>man</code></th>
+                                    <td>Abre el manual de un comando.</td>
+                                    <td><code>man ls</code></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><code>sudo</code></th>
+                                    <td>Ejecuta un comando con privilegios de administrador.</td>
+                                    <td><code>sudo apt update</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Una sesión de ejemplo:</p>
+                    <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: sesión de terminal">
+                        <code>usuario@linux:~$ pwd
 /home/usuario
 usuario@linux:~$ mkdir proyectos
 usuario@linux:~$ cd proyectos
 usuario@linux:~/proyectos$ ls
 usuario@linux:~/proyectos$ cd ..
 usuario@linux:~$</code></pre>
-                        <p>
-                            Pulsa <kbd>Tab</kbd> para autocompletar nombres y <kbd>↑</kbd> para recuperar comandos
-                            anteriores.
-                        </p>
-                    </article>
+                    <p>
+                        Pulsa <kbd>Tab</kbd> para autocompletar nombres y <kbd>↑</kbd> para recuperar comandos
+                        anteriores.
+                    </p>
+                </article>
 
-                    <article>
-                        <h3>Permisos de archivos</h3>
-                        <p>
-                            Cada archivo tiene permisos de lectura (<code>r</code>), escritura (<code>w</code>) y
-                            ejecución (<code>x</code>) para tres grupos: el propietario, el grupo y los demás. El
-                            comando <code>ls -l</code> los muestra al principio de cada línea:
-                        </p>
-                        <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: salida de ls -l"><code>-rwxr-xr-- 1 usuario grupo 1024 oct 17 10:30 script.sh</code></pre>
-                        <p>
-                            El primer carácter indica el tipo (<code>-</code> es un archivo). Luego vienen tres
-                            bloques: <code>rwx</code> para el propietario, <code>r-x</code> para el grupo y
-                            <code>r--</code> para los demás. Con <code>chmod</code> se modifican:
-                        </p>
-                        <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: comandos chmod"><code>chmod u+x script.sh    # añade ejecución al propietario
-chmod 754 script.sh    # equivale a rwxr-xr--</code></pre>
-                        <p>
-                            En la forma numérica, cada permiso vale un número: lectura 4, escritura 2 y ejecución 1.
-                            Se suman por bloque, así que <code>7</code> es <code>rwx</code>, <code>5</code> es
-                            <code>r-x</code> y <code>4</code> es <code>r--</code>.
-                        </p>
-                    </article>
-                </section>
-            </div>
-
-            <aside aria-labelledby="titulo-enlaces">
-                <h2 id="titulo-enlaces">Enlaces relevantes</h2>
-
-                <section aria-labelledby="enlaces-proyectos">
-                    <h3 id="enlaces-proyectos">Proyectos y distribuciones</h3>
-                    <ul>
-                        <li>
-                            <a href="https://www.kernel.org" hreflang="en">
-                                <span lang="en">The Linux Kernel Archives</span> (en inglés)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.gnu.org/home.es.html" hreflang="es">
-                                Proyecto GNU
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.debian.org/index.es.html" hreflang="es">
-                                Debian
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://ubuntu.com" hreflang="en">
-                                <span lang="en">Ubuntu</span> (en inglés)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://fedoraproject.org" hreflang="en">
-                                <span lang="en">Fedora Project</span> (en inglés)
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-
-                <section aria-labelledby="enlaces-aprender">
-                    <h3 id="enlaces-aprender">Aprender y consultar</h3>
-                    <ul>
-                        <li>
-                            <a href="https://linuxjourney.com" hreflang="en">
-                                <span lang="en">Linux Journey</span>: curso interactivo (en inglés)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://man7.org/linux/man-pages/" hreflang="en">
-                                Páginas del manual de Linux (en inglés)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wiki.archlinux.org" hreflang="en">
-                                <span lang="en">Arch Wiki</span>: documentación general (en inglés)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://distrowatch.com" hreflang="en">
-                                <span lang="en">DistroWatch</span>: comparar distribuciones (en inglés)
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </aside>
+                <article>
+                    <h3>Permisos de archivos</h3>
+                    <p>
+                        Cada archivo tiene permisos de lectura (<code>r</code>), escritura (<code>w</code>) y
+                        ejecución (<code>x</code>) para tres grupos: el propietario, el grupo y los demás. El
+                        comando <code>ls -l</code> los muestra al principio de cada línea:
+                    </p>
+                    <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: salida de ls -l">
+                        <code>-rwxr-xr-- 1 usuario grupo 1024 oct 17 10:30 script.sh</code></pre>
+                    <p>
+                        El primer carácter indica el tipo (<code>-</code> es un archivo). Luego vienen tres
+                        bloques: <code>rwx</code> para el propietario, <code>r-x</code> para el grupo y
+                        <code>r--</code> para los demás. Con <code>chmod</code> se modifican:
+                    </p>
+                    <pre class="code-block" tabindex="0" role="region" aria-label="Ejemplo: comandos chmod">
+                        <code>chmod u+x script.sh # añade ejecución al propietario
+                            chmod 754 script.sh # equivale a rwxr-xr--</code></pre>
+                    <p>
+                        En la forma numérica, cada permiso vale un número: lectura 4, escritura 2 y ejecución 1.
+                        Se suman por bloque, así que <code>7</code> es <code>rwx</code>, <code>5</code> es
+                        <code>r-x</code> y <code>4</code> es <code>r--</code>.
+                    </p>
+                </article>
+            </section>
         </div>
+
+        <aside aria-labelledby="titulo-enlaces">
+            <h2 id="titulo-enlaces">Enlaces relevantes</h2>
+
+            <section aria-labelledby="enlaces-proyectos">
+                <h3 id="enlaces-proyectos">Proyectos y distribuciones</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.kernel.org" hreflang="en">
+                            <span lang="en">The Linux Kernel Archives</span> (en inglés)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.gnu.org/home.es.html" hreflang="es">
+                            Proyecto GNU
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.debian.org/index.es.html" hreflang="es">
+                            Debian
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ubuntu.com" hreflang="en">
+                            <span lang="en">Ubuntu</span> (en inglés)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://fedoraproject.org" hreflang="en">
+                            <span lang="en">Fedora Project</span> (en inglés)
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="enlaces-aprender">
+                <h3 id="enlaces-aprender">Aprender y consultar</h3>
+                <ul>
+                    <li>
+                        <a href="https://linuxjourney.com" hreflang="en">
+                            <span lang="en">Linux Journey</span>: curso interactivo (en inglés)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://man7.org/linux/man-pages/" hreflang="en">
+                            Páginas del manual de Linux (en inglés)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wiki.archlinux.org" hreflang="en">
+                            <span lang="en">Arch Wiki</span>: documentación general (en inglés)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://distrowatch.com" hreflang="en">
+                            <span lang="en">DistroWatch</span>: comparar distribuciones (en inglés)
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
     </main>
 
     <footer>
